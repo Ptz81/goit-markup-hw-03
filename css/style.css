@@ -50,8 +50,10 @@ h3{
     
 }
 
-li{
+.li-style{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden{
@@ -78,7 +80,10 @@ li{
 
 
 /* header */
-
+.header{
+    margin: 0;
+    padding: 0;
+}
 
 .menu-link{
     font-weight: 500;
@@ -111,7 +116,10 @@ li{
     color: var(--primary-text-color);
 }
 
-
+.nav{
+    display: flex;
+    outline: 1px #2196F3;
+}
 
 
 
