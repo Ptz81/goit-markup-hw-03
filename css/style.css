@@ -72,6 +72,9 @@ li{
     color: var(--accent-color);
 }
 
+.border-btn{
+    border: 1px solid transparent;
+}
 
 
 /* header */
@@ -215,6 +218,11 @@ address{
 .section-btn:focus{
     background-color: var(--accent-color);
     color: var(--main-color)
+}
+
+.focus-bg {
+    background-color: var(--accent-color);
+    color: var(--main-color);
 }
 
 .portfolio-items{
