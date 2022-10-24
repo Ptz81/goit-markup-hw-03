@@ -90,21 +90,24 @@ ul{
     margin-left: auto;
     
 
-    padding-left: 15px;
-    padding-right: 15px;
 
-
-    outline:1px solid chocolate;
     
 }
 
 /* header */
+
+.header{
+    background-color: var(--main-color);
+}
 .logo-flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+.border-line{
+    border: 1px solid var(--border-header);
+}
 
 .menu-contact{
     display: flex;
@@ -138,6 +141,7 @@ ul{
     margin-top: 25px;
     margin-bottom: 24px;
 
+ 
 }
 
 .logo>span{
@@ -303,6 +307,17 @@ address{
 
 /* Page 2 - Portfolio */
 
+.section{
+    text-align: center;
+}
+
+.section-item{
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    /* margin-right: auto; */
+}
 .section-btn{
     background-color: var(--secondary-bg-color);
     color: var(--title-text-color);
@@ -312,6 +327,15 @@ address{
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
+
+    border-radius: 4px;
+
+    display: inline-block;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    margin-right: 7px;
 }
 
 .section-btn:hover,
@@ -323,10 +347,20 @@ address{
 .focus-bg {
     background-color: var(--accent-color);
     color: var(--main-color);
+    padding-left: 25px;
+    padding-right: 25px;
 }
-
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .portfolio-items{
     cursor: pointer;
+    text-align: left;
+
+    /* margin-right: 30px; */
+    margin-bottom: 30px;
 }
 
 .portfolio-title{
@@ -335,11 +369,24 @@ address{
     line-height: 2.0;
     letter-spacing: 0.06em;
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.title-img{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.category-img{
+    margin-bottom: 20px;
 }
 
 .category{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
