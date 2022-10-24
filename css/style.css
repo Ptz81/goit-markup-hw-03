@@ -91,7 +91,10 @@ ul{
 
 }
 
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 
 /* header */
@@ -163,17 +166,18 @@ ul{
 
 
 
-
+.main{
+    background-color: var(--main-color);
+}
 
 /* Hero section */
 
 .hero{
     background-color: var(--footer-bg-color);
     text-align: center;
-    /* min-height: 600px; */
     padding-top: 200px;
-    padding-bottom: 200px;
-    margin-bottom: 94px;
+    padding-bottom: 280px;
+
 }
 .hero-title{
     color: var(--main-color);
@@ -217,9 +221,7 @@ ul{
 .ad-title{
     display: none;
 }
-.advantages{
-    margin-bottom: 94px;
-}
+
 .advantages-title{
     font-weight: 700;
     font-size: 14px;
@@ -246,9 +248,7 @@ ul{
 
 /* Activity */
 
-.activity{
-margin-bottom: 94px;
-}
+
 .activity-title{
     margin-top: 0;
     margin-bottom: 50px;
@@ -258,6 +258,7 @@ margin-bottom: 94px;
     display: flex;
     justify-content: space-between;
 }
+
 /* Team */
 .team{
     background-color: var(--secondary-bg-color);
@@ -266,7 +267,7 @@ margin-bottom: 94px;
 .team-title{
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
+    /* padding-top: 94px; */
 }
 .team-box{
     display: flex;
@@ -279,8 +280,8 @@ background-color: var(--main-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    margin-top: 0;
-    margin-bottom: 94px;
+    /* margin-top: 0; */
+
 }
 .user{
     font-weight: 400;
@@ -332,9 +333,7 @@ address{
 
 /* Page 2 - Portfolio */
 
-.section{
-    text-align: center;
-}
+
 
 .section-item{
     display: flex;
