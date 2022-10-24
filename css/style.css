@@ -88,11 +88,11 @@ ul{
     min-height: 80px;
     margin-right: auto;
     margin-left: auto;
-    
 
-
-    
 }
+
+
+
 
 /* header */
 
@@ -127,6 +127,9 @@ ul{
     text-decoration: none;
 
     margin-right: 50px;
+}
+.no-margin{
+    margin-right: 0px;
 }
 
 .logo{
@@ -195,10 +198,18 @@ ul{
     line-height: 1.87;
     letter-spacing: 0.06em;
 
-    cursor: pointer;
-
     padding: 10px 32px;
 
+    border-radius: 4px;
+
+}
+
+.btn:hover,
+.btn:focus{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    
+        color: var(--title-text-color);
 }
 
 
@@ -353,18 +364,15 @@ address{
 }
 
 .section-btn:hover,
-.section-btn:focus{
-    background-color: var(--accent-color);
-    color: var(--main-color)
-}
-
-.focus-bg {
+.section-btn:focus,
+.section-btn:active{
     background-color: var(--accent-color);
     color: var(--main-color);
-    padding-left: 25px;
-    padding-right: 25px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+
+
 .portfolio{
     display: flex;
     flex-wrap: wrap;
@@ -376,6 +384,11 @@ address{
 
     /* margin-right: 30px; */
     margin-bottom: 30px;
+}
+
+.portfolio-items:hover,
+.portfolio-items:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title{
