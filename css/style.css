@@ -11,29 +11,22 @@
     --trans-text-color: rgba(255, 255, 255, .6);
     --logo-color: #000000;
     --border-header:#ECECEC;
+
+
+    
 }
 
-/* main parameters */
-.main{
-    background-color: var(--background);
-}
-
-.accent:hover,
-.accent:focus
-{
-    color: var(--accent-color);
-}
-
-
-body{
-    width: 1600px;
-    color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    padding: 0;
+/* BASIC PARAMETERS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p{
     margin: 0;
 }
+
 h2, h3, h4{
     color: var(--title-text-color);
 }
@@ -41,28 +34,49 @@ h2{
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
-        text-align: center;
-        
+        text-align: center;     
 }
 
 h3{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    
 }
-ul{
-    margin: 0;
-        padding: 0;
-}
-
 img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
-.li-style{
-    list-style: none;
+
+button{
+ 
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+body{
+
+    background-color: var(--background);
+    color: var(--primary-text-color);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 
 }
+
+
+.li-style{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+
+
+/* HIDDEN CLASS */
 
 .visually-hidden{
     position: absolute;
@@ -86,12 +100,19 @@ img{
     border: 1px solid transparent;
 }
 
+.accent:hover,
+.accent:focus
+{
+    color: var(--accent-color);
+}
 .container{
 
     width: 1200px;
-    min-height: 80px;
+
+    /* margin: 0 auto; */
     margin-right: auto;
     margin-left: auto;
+    padding: 0px 15px;
 
 }
 
@@ -104,13 +125,16 @@ img{
 /* header */
 
 .header{
-    background-color: var(--main-color);
     border-bottom: 1px solid var(--border-header);
 }
 .logo-flex{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+   
+}
+
+.nav{
+    margin-left: 93px;
 }
 
 .border-line{
@@ -119,25 +143,31 @@ img{
 
 .menu-contact{
     display: flex;
-
+    margin-left: auto;
 }
 
 .menu{
     display: flex;
 }
 
+.nav-menu:not(:last-child){
+    margin-right: 50px;
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .menu-link{
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    margin-right: 50px;
+    
 }
-.no-margin{
-    margin-right: 0px;
-}
+
 
 .logo{
     color: var(--logo-color);
@@ -145,7 +175,7 @@ img{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
     letter-spacing: 0.03em;
 
     display: inline-block;
@@ -180,7 +210,7 @@ img{
     background-color: var(--footer-bg-color);
     text-align: center;
     padding-top: 200px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 
 }
 .hero-title{
@@ -190,12 +220,11 @@ img{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    margin-top: 0;
+    width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 .btn{
-    display: inline-block;
 
     background-color: var(--accent-color);
     color: var(--main-color);
@@ -207,16 +236,12 @@ img{
     letter-spacing: 0.06em;
     padding: 10px 32px;
 
-    
-
 }
 
 .btn:hover,
 .btn:focus{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    border-radius: 4px;
-        color: var(--title-text-color);
+    color: var(--title-text-color);
 }
 
 
@@ -236,7 +261,7 @@ img{
 }
 .advantages-box{
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
 }
 
 
@@ -250,7 +275,9 @@ img{
 }
 
 /* Activity */
-
+.no-padding{
+    padding-top: 0px;
+}
 
 .activity-title{
     margin-top: 0;
@@ -259,7 +286,7 @@ img{
 
 .activity-box{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 /* Team */
@@ -274,7 +301,7 @@ img{
 }
 .team-box{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 
     
 }
@@ -284,22 +311,31 @@ background-color: var(--main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     /* margin-top: 0; */
-
+}
+.team-name{
+    margin: 0;
+    margin-bottom: 10px;
 }
 .user{
     font-weight: 400;
         font-size: 16px;
         line-height: 1.2;
+        margin: 0px;
 }
-
+.team-player{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 /* Footer */
 .footer{
     background-color: var(--footer-bg-color);
-    font-style: normal;
+
+    padding: 60px 0;
+    /* font-style: normal;
     font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.7; */
     
 }
 address{
@@ -317,6 +353,10 @@ address{
 
 }
 
+.footer-item{
+    margin-bottom: 9px;
+}
+
 .footer-logo {
     color: var(--main-color);
     display: inline-block;
@@ -329,21 +369,22 @@ address{
     text-decoration: none;
 }
 
-.bottom-div{
+/* .bottom-div{
     padding-top: 60px;
     padding-bottom: 60px;
-}
+} */
 
 /* Page 2 - Portfolio */
 
-
+.section-portfolio{
+    padding: 94px 0;
+}
 
 .section-item{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
-    /* margin-right: auto; */
+    margin-bottom: 50px;
+    gap: 8px;
 }
 .section-btn{
     background-color: var(--secondary-bg-color);
@@ -354,15 +395,17 @@ address{
     font-size: 16px;
     line-height: 1.62;
     cursor: pointer;
-
-    border-radius: 4px;
+    letter-spacing: 00.03em;
 
     display: inline-block;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
-    margin-right: 7px;
+    
+}
+.border-line {
+    width: 30%;
 }
 
 .btn-default,
@@ -378,15 +421,9 @@ address{
 .portfolio{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
 }
-.portfolio-items{
-    cursor: pointer;
-    text-align: left;
 
-    /* margin-right: 30px; */
-    margin-bottom: 30px;
-}
 
 .portfolio-items:hover,
 .portfolio-items:focus{
@@ -404,13 +441,10 @@ address{
 }
 
 .title-img{
-    margin-left: 20px;
-    margin-bottom: 20px;
+padding: 20px 24px;
+border: 1px solid var(--border-header);
 }
 
-.category-img{
-    margin-bottom: 20px;
-}
 
 .category{
     font-weight: 400;
