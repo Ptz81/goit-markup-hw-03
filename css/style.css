@@ -57,7 +57,7 @@ button{
 
 body{
 
-    background-color: var(--background);
+    /* background-color: var(--background); */
     color: var(--primary-text-color);
 
     font-family: 'Roboto', sans-serif;
@@ -69,7 +69,7 @@ body{
 
 .li-style{
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 
 }
@@ -96,9 +96,7 @@ body{
     color: var(--accent-color);
 }
 
-.border-btn{
-    border: 1px solid transparent;
-}
+
 
 .accent:hover,
 .accent:focus
@@ -353,8 +351,9 @@ address{
 
 }
 
-.footer-item{
+.footer-item:not(:last-child){
     margin-bottom: 9px;
+    line-height: 1.71;
 }
 
 .footer-logo {
@@ -387,7 +386,7 @@ address{
     gap: 8px;
 }
 .section-btn{
-    background-color: var(--secondary-bg-color);
+    background-color: var(--background);
     color: var(--title-text-color);
     font-family: inherit;
     font-style: normal;
@@ -397,16 +396,13 @@ address{
     cursor: pointer;
     letter-spacing: 00.03em;
 
-    display: inline-block;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
     
 }
-.border-line {
-    width: 30%;
-}
+
 
 .btn-default,
 .section-btn:hover,
@@ -421,10 +417,13 @@ address{
 .portfolio{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    
 }
 
-
+.border-line{
+    width: 370px;
+}
 .portfolio-items:hover,
 .portfolio-items:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -443,6 +442,7 @@ address{
 .title-img{
 padding: 20px 24px;
 border: 1px solid var(--border-header);
+cursor: pointer;
 }
 
 
